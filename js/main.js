@@ -1,22 +1,20 @@
-function dzialanie() {
-    let a1 = parseInt(prompt("wprowadz liczbe pierwszą"));
-    let a2 = parseInt(prompt("Wprowadź liczbe drugą"));
-    let a3 = a1 + a2;
-    let a4 = a1 - a2;
-    let a5 = a1 * a2;
+let a1 = parseInt(prompt("wprowadz liczbe pierwszą"));
+let a2 = parseInt(prompt("Wprowadź liczbe drugą"));
 
-    if (a3 < 0 || a4 < 0 || a5 < 0) {
+function dzialanie(num1,num2) {
+
+    let sum = a1 + a2;
+    let sub = a1 - a2;
+    let mult = a1 * a2;
+
+    if (sum < 0 || sub < 0 || mult < 0) {
         console.log("Wynik nieprawidłowy")
     }
     else {
-        a3 = a1 + a2;
-        console.log(`wynik dodawania to: ${a3}`);
-        a4 = a1 - a2;
-        console.log(`wynik odejmowania to: ${a4}`);
-        a5 = a1 * a2;
-        console.log(`wynik mnożenia to: ${a5}`);
+        console.log(`wynik dodawania to: ${sum}`);
+        console.log(`wynik odejmowania to: ${sub}`);
+        console.log(`wynik mnożenia to: ${mult}`);
     }
 
-
 }
-dzialanie()
+dzialanie(a1,a2)
